@@ -9,7 +9,7 @@ function createWindow() {
       nodeIntegration: true,
     },
   });
-
+  win.setMenu(null);
   win.loadFile("ui/index.html");
 }
 
