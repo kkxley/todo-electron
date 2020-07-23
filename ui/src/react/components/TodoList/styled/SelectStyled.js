@@ -2,16 +2,18 @@ import React from "react";
 import { styled, makeStyles } from "@material-ui/core/styles";
 import { MenuItem, Select } from "@material-ui/core";
 
+import {red, green, yellow} from "@material-ui/core/colors";
+
 const HighPriorityOption = styled(MenuItem)({
-  color: "#dc3545",
+  color: red[900],
 });
 
 const MediumPriorityOption = styled(MenuItem)({
-  color: "#ffc107",
+  color: yellow[800],
 });
 
 const LowPriorityOption = styled(MenuItem)({
-  color: "#28a745",
+  color: green[800],
 });
 
 const useStylesPrioritySelect = makeStyles({
@@ -20,11 +22,11 @@ const useStylesPrioritySelect = makeStyles({
       console.log(value);
       switch (value) {
         case "high":
-          return "#dc3545";
+          return red[800];
         case "medium":
-          return "#ffc107";
+          return yellow[800];
         case "low":
-          return "#28a745";
+          return green[600];
         default:
           return "initial";
       }

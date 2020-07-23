@@ -5,13 +5,15 @@ import CheckIcon from "@material-ui/icons/Check";
 import WarningIcon from "@material-ui/icons/Warning";
 import DeleteIcon from "@material-ui/icons/Delete";
 
+import {red, green} from "@material-ui/core/colors";
+
 const DoneIcon = CheckIcon;
 
 const NotDoneIcon = WarningIcon;
 
 const useStylesStatusIcon = makeStyles({
   root: {
-    backgroundColor: ({ isDone }) => (isDone ? "#28a745" : "#dc3545"),
+    backgroundColor: ({ isDone }) => (isDone ? green[600] : red[800]),
   },
 });
 

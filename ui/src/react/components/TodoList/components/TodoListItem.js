@@ -13,7 +13,7 @@ import {StatusIcon, DoneIcon, NotDoneIcon, DeleteIcon} from '../styled/IconStyle
 
 export default function TodoListItem({ id, title, date, priority, isDone }) {
   return (
-    <ListItem className="todo-list__item">
+    <ListItem button className="todo-list__item">
       <ListItemAvatar>
         <StatusIcon isDone={isDone}>
           {isDone ? (

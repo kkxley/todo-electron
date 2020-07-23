@@ -5,10 +5,10 @@ import Menu from './components/Menu';
 
 export default function App(){
     return (
-        <section>
+        <>
             <Header/>
             <TodoList/>
             <Menu/>
-        </section>
+        </>
     )
 }
