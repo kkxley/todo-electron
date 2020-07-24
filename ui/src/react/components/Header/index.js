@@ -4,6 +4,8 @@ import { Container, Typography } from "@material-ui/core";
 import { useStylesHeader } from "./styled/HeaderStyled";
 
 import DatePickers from "./components/DatePickers";
+import StatusCheckbox from './components/StatusCheckbox';
+import PriorityCheckbox from './components/PriorityCheckbox';
 
 export default function Header() {
   const classes = useStylesHeader();
@@ -12,6 +14,8 @@ export default function Header() {
     <Container className={classes.root}>
       {false && <Typography variant="h3">ToDO List</Typography>}
       <DatePickers />
+      <StatusCheckbox/>
+      <PriorityCheckbox/>
     </Container>
   );
 }
